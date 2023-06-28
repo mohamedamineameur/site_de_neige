@@ -1,0 +1,157 @@
+/*
+ Règle CSS de base et pour mobile
+*/
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+body{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+aside span{
+    display: none;
+    border-bottom:solid white 1px ;
+}
+.page-wrapper{
+    display: flex;
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+}
+aside{
+    display: flex;
+    flex-direction: column;
+    background-color: #3f5aa3;
+    color:#fff;
+}
+
+.content-wrapper{
+    display: flex;
+    flex-direction: column;
+
+}
+
+#montagne{
+    z-index: -1;
+   
+    
+}
+
+main{
+    display:flex;
+    flex-direction: column;
+}
+
+.advert{
+    display: flex;
+    flex-direction: column;
+    
+    
+    background-color: #292955;
+    color: #fff;
+    
+    
+    
+}
+h2{
+    font-size: 2em;
+    margin: 1em;
+}
+h1{
+    z-index: 1;
+    font-size: 4em;
+    padding-bottom: 10px;
+
+}
+
+header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+.sled{
+    border: solid black 2px;
+    
+    
+}
+
+.winter{
+    border: solid black 2px;
+    
+   
+}
+p{
+    margin: 1em;
+}
+
+.galerie{
+    padding-top: 2em;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    max-width: 600px;
+    
+    
+}
+
+div img{
+    max-width: 150px;
+}
+
+footer{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    background-color: #5394d1;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+    font-size: 15pt;
+    
+}
+a{
+    display: flex;
+    flex-direction: row;
+    color: #fff;
+    text-decoration: none;
+    
+}
+
+
+
+/*
+ Règle à ajouter pour tablette électronique
+*/
+@media (min-width: 700px){
+    .advert{
+        display: flex;
+        flex-direction: row;
+        
+        
+        background-color: #292955;
+        color: #fff;
+        
+        
+        
+    }
+    
+}
+
+/*
+ Règle à ajouter pour ordinateur
+*/
+@media (min-width: 1200px){
+    aside span{
+        display: inline-block;
+    }
+    
+}
